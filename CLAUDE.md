@@ -22,6 +22,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `/project:script` | イベントカードのテキスト・セリフ作成 |
 | `/project:spec` | 仕様書の生成・更新 |
 | `/project:code` | 仕様書に基づくコード実装 |
+| `/project:asset` | PixelLab MCPでピクセルアート素材を生成 |
+| `/project:audio` | ElevenLabs MCPでBGM・SEを生成 |
+| `/project:balance` | カードのパラメーター変動をシミュレート・調整 |
+| `/project:export` | Godotエクスポートから投稿サイトへのリリース手順ガイド |
 
 **進め方の原則（全コマンド共通）：**
 - 一度に聞く質問は最大3つ
