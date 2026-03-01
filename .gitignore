@@ -1,0 +1,16 @@
+# Godot
+.godot/
+*.import
+export_presets.cfg
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+
+# Claude local settings (APIキーを含むため)
+.claude/settings.local.json
+.mcp.json
