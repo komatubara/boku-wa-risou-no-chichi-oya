@@ -12,7 +12,7 @@
     "swipe_right": {
       "action_text": "月30万の受験コンサルと即契約",
       "result_text": "コンサルは毎週息子に大量の課題を出した。息子は「勉強しろと言う人間が多すぎて、もう誰の言うことも聞きたくない」と言い始めた。",
-      "stat_changes": { "independence": -10, "ego": 10, "wealth": -20, "hate": 0 }
+      "stat_changes": { "independence": -4, "ego": 5, "wealth": -20, "hate": 0 }
     }
   },
   {
@@ -28,7 +28,7 @@
     "swipe_right": {
       "action_text": "「出題ミスがあったはずだ」と乗り込む",
       "result_text": "父は翌朝、大学の入試事務局に電話した。「うちの子が落ちるはずがない。問題に不備があったのでは」。事務局は開示請求の手続きを案内した。息子に「お父さんと口きかない」と言われた。",
-      "stat_changes": { "independence": -15, "ego": 5, "wealth": 0, "hate": 25 }
+      "stat_changes": { "independence": -5, "ego": 3, "wealth": 0, "hate": 8 }
     }
   },
   {
@@ -44,7 +44,7 @@
     "swipe_right": {
       "action_text": "「通信料を返金しろ」と抗議する",
       "result_text": "父は学校へ「没収期間の通信料2800円を返金してほしい」と申し入れた。先生は絶句した。この話は職員室で長く語り継がれた。",
-      "stat_changes": { "independence": 0, "ego": 10, "wealth": 0, "hate": 15 }
+      "stat_changes": { "independence": 0, "ego": 5, "wealth": 0, "hate": 5 }
     }
   },
   {
@@ -60,7 +60,7 @@
     "swipe_right": {
       "action_text": "相手の家に謝罪を要求しに行く",
       "result_text": "父は相手の女の子の家を突き止め、インターフォンを鳴らした。「うちの息子が傷ついている。謝罪をお願いしたい」。相手の母親が出てきた後の30分は、父が謝り続ける時間になった。息子は以降、恋愛の話を一切しなくなった。",
-      "stat_changes": { "independence": -10, "ego": 5, "wealth": 0, "hate": 20 }
+      "stat_changes": { "independence": -4, "ego": 3, "wealth": 0, "hate": 7 }
     }
   },
   {
@@ -76,7 +76,7 @@
     "swipe_right": {
       "action_text": "「有名大学以外あり得ない」と完全無視",
       "result_text": "「ふざけるな。お前の志望はもう決まってる」。翌日から父は息子の部屋の前に理系参考書を積み上げた。息子の部屋の鍵が、内側からかかるようになった。",
-      "stat_changes": { "independence": -20, "ego": 15, "wealth": 0, "hate": 0 }
+      "stat_changes": { "independence": -7, "ego": 8, "wealth": 0, "hate": 0 }
     }
   }
 ]

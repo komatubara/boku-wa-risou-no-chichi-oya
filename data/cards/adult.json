@@ -12,7 +12,7 @@
     "swipe_right": {
       "action_text": "採用担当に「なぜ落とした」と抗議電話",
       "result_text": "父は企業の代表番号を調べ、電話した。「なぜ息子が落ちたのか理由を教えてほしい」。電話は録音され、その企業には二度とエントリーできなくなった。息子には言えなかった。",
-      "stat_changes": { "independence": -15, "ego": 5, "wealth": 0, "hate": 25 }
+      "stat_changes": { "independence": -5, "ego": 3, "wealth": -5, "hate": 8 }
     }
   },
   {
@@ -28,7 +28,7 @@
     "swipe_right": {
       "action_text": "会社に「うちの子を叱るな」と電話",
       "result_text": "父は会社の代表番号に電話し、総務→人事→課長本人と回された。翌日、息子は職場で「ママに電話してもらった人」と呼ばれるようになった。",
-      "stat_changes": { "independence": -20, "ego": 10, "wealth": 0, "hate": 25 }
+      "stat_changes": { "independence": -7, "ego": 5, "wealth": 0, "hate": 8 }
     }
   },
   {
@@ -44,7 +44,7 @@
     "swipe_right": {
       "action_text": "会社にアポなしで乗り込む",
       "result_text": "父は会社の受付で「息子を残業させている上の人間に話がある」と告げた。警備員が呼ばれた。翌朝、息子から「二度と会社に来ないでくれ」とLINEが届いた。",
-      "stat_changes": { "independence": -20, "ego": 5, "wealth": 0, "hate": 30 }
+      "stat_changes": { "independence": -7, "ego": 3, "wealth": -5, "hate": 10 }
     }
   },
   {
@@ -60,7 +60,7 @@
     "swipe_right": {
       "action_text": "弁護士に内容証明を送らせる",
       "result_text": "父は弁護士に「職場のパワーハラスメント」として内容証明を依頼した。会社は大混乱した。息子は「居場所がなくなった」と言い、半年後に退職した。",
-      "stat_changes": { "independence": -20, "ego": 10, "wealth": -20, "hate": 30 }
+      "stat_changes": { "independence": -7, "ego": 5, "wealth": -20, "hate": 10 }
     }
   },
   {
@@ -76,7 +76,7 @@
     "swipe_right": {
       "action_text": "会社の近くに自分も引っ越す",
       "result_text": "「一人では無理だ」。父は翌週、息子の会社から徒歩3分のマンションを契約した。引越し祝いに訪ねると、ドアに貼り紙があった。「来ないでください」。",
-      "stat_changes": { "independence": -25, "ego": 15, "wealth": -10, "hate": 20 }
+      "stat_changes": { "independence": -9, "ego": 8, "wealth": -10, "hate": 7 }
     }
   }
 ]

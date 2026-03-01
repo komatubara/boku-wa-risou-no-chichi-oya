@@ -12,7 +12,7 @@
     "swipe_right": {
       "action_text": "「担任のせいだ、担任を変えろ」",
       "result_text": "父は翌朝、学校に乗り込んだ。「先生の教え方が悪いから成績が落ちた。担任を替えてほしい」。校長が対応したが却下。以来、担任は息子の答案を採点するたびに深いため息をつくようになった。",
-      "stat_changes": { "independence": -10, "ego": 5, "wealth": 0, "hate": 20 }
+      "stat_changes": { "independence": -4, "ego": 3, "wealth": -2, "hate": 6 }
     }
   },
   {
@@ -28,7 +28,7 @@
     "swipe_right": {
       "action_text": "弁護士を連れて相手の親に乗り込む",
       "result_text": "父は弁護士に依頼し、「SNSでの仲間外れは人格権の侵害にあたる可能性がある」と相手の保護者に通知書を送った。翌日、クラスは騒然となった。息子のあだ名は「弁護士くん」になった。",
-      "stat_changes": { "independence": -15, "ego": 0, "wealth": -15, "hate": 20 }
+      "stat_changes": { "independence": -5, "ego": 0, "wealth": -15, "hate": 7 }
     }
   },
   {
@@ -44,7 +44,7 @@
     "swipe_right": {
       "action_text": "「顧問を替えろ」と要求する",
       "result_text": "父は保護者会で立ち上がった。「選考基準が不透明だ。顧問の指導力に問題がある」。保護者会は紛糾し、学校側は調査を開始。息子は「もう部活に行きたくない」と言い始めた。",
-      "stat_changes": { "independence": -15, "ego": 5, "wealth": 0, "hate": 20 }
+      "stat_changes": { "independence": -5, "ego": 3, "wealth": 0, "hate": 7 }
     }
   },
   {
@@ -60,7 +60,7 @@
     "swipe_right": {
       "action_text": "「人気グループに入れろ」と担任に圧力",
       "result_text": "父は担任に電話した。「あのグループのリーダーの家と付き合いがあるので、Aグループに入れてもらえますか」。担任は沈黙した。修学旅行で息子は6人部屋に一人になった。",
-      "stat_changes": { "independence": -15, "ego": 5, "wealth": 0, "hate": 15 }
+      "stat_changes": { "independence": -5, "ego": 3, "wealth": 0, "hate": 5 }
     }
   },
   {
@@ -76,7 +76,7 @@
     "swipe_right": {
       "action_text": "「給食費を返金しろ」と要求する",
       "result_text": "父は教育委員会に「嫌いなものを食べられなかった分の給食費は返金されるべきだ」と文書で申し入れた。丁寧な却下通知が届いた。地域の保護者SNSに「モンペ出現」と書き込まれた。",
-      "stat_changes": { "independence": 0, "ego": 10, "wealth": 0, "hate": 25 }
+      "stat_changes": { "independence": 0, "ego": 5, "wealth": 0, "hate": 8 }
     }
   }
 ]

@@ -12,7 +12,7 @@
     "swipe_right": {
       "action_text": "学校に洗わせる",
       "result_text": "翌朝、父は学校に電話した。「汚れた体操服を洗って返してください」。担任は絶句し、校長も呼ばれた。帰宅した息子の第一声は「なんで電話したの……クラスで笑われた」だった。",
-      "stat_changes": { "independence": -5, "ego": 5, "wealth": 0, "hate": 10 }
+      "stat_changes": { "independence": -2, "ego": 3, "wealth": 0, "hate": 3 }
     }
   },
   {
@@ -28,7 +28,7 @@
     "swipe_right": {
       "action_text": "担任に迎えに来させる",
       "result_text": "父は学校に電話した。「毎朝、息子を起こしに来てもらえますか」。担任は五秒間沈黙した後、丁重に断った。父は今度は教育委員会に電話した。息子は「もう学校行きたくない」とつぶやいた。",
-      "stat_changes": { "independence": -15, "ego": 5, "wealth": 0, "hate": 10 }
+      "stat_changes": { "independence": -5, "ego": 3, "wealth": 0, "hate": 4 }
     }
   },
   {
@@ -44,7 +44,7 @@
     "swipe_right": {
       "action_text": "ハンデをつけさせる",
       "result_text": "父は翌日学校へ「足の遅い子には10メートルのハンデを設けてほしい」と申し入れた。先生は「それは……」と絶句。翌年の運動会から、息子のあだ名は「ハンデくん」になった。",
-      "stat_changes": { "independence": -10, "ego": 10, "wealth": 0, "hate": 15 }
+      "stat_changes": { "independence": -4, "ego": 5, "wealth": 0, "hate": 5 }
     }
   },
   {
@@ -60,7 +60,7 @@
     "swipe_right": {
       "action_text": "運動会の再開催を要求する",
       "result_text": "父は即座に学校に電話した。「うちの子が欠席した。再開催してください」。校長は3分間かけて断った。父は市の教育委員会にも電話した。地方ニュースに「運動会の再開催を求める保護者」として報道された。",
-      "stat_changes": { "independence": -5, "ego": 10, "wealth": -5, "hate": 25 }
+      "stat_changes": { "independence": -2, "ego": 5, "wealth": -5, "hate": 8 }
     }
   },
   {
@@ -76,7 +76,7 @@
     "swipe_right": {
       "action_text": "「宿題をなくせ」と校長室へ",
       "result_text": "翌朝、父はネクタイを締めて学校へ乗り込んだ。「子どもは遊ぶのが仕事です。宿題は権利の侵害だ！」。校長は30分対応した。息子は「友達のお父さんに見られた」と一週間、腹痛を理由に学校を休んだ。",
-      "stat_changes": { "independence": -15, "ego": 10, "wealth": 0, "hate": 20 }
+      "stat_changes": { "independence": -5, "ego": 5, "wealth": 0, "hate": 5 }
     }
   }
 ]

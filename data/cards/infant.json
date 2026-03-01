@@ -12,7 +12,7 @@
     "swipe_right": {
       "action_text": "おもちゃの撤去を要求する",
       "result_text": "父は翌朝、保育園に電話した。「うちの子が負けたおもちゃを撤去してください」。主任保育士は30秒絶句した後、「……検討いたします」と答えた。翌週、そのおもちゃは消えた。息子は「なんかなくなってた」と不思議そうにしていた。",
-      "stat_changes": { "independence": -5, "ego": 0, "wealth": 0, "hate": 10 }
+      "stat_changes": { "independence": -1, "ego": 0, "wealth": 0, "hate": 2 }
     }
   },
   {
@@ -28,7 +28,7 @@
     "swipe_right": {
       "action_text": "「怪我をさせた責任を取れ」と怒鳴り込む",
       "result_text": "「どんな管理をしてるんですか！」。父の怒声が保育園に響いた。主任が頭を下げ、園長まで出てきた。息子は帰り道、「お父さん、こわかった……」とつぶやいた。",
-      "stat_changes": { "independence": -5, "ego": 5, "wealth": 0, "hate": 10 }
+      "stat_changes": { "independence": -2, "ego": 3, "wealth": 0, "hate": 2 }
     }
   },
   {
@@ -44,7 +44,7 @@
     "swipe_right": {
       "action_text": "「無理やり食べさせるな」と抗議する",
       "result_text": "父は連絡帳に三行にわたる抗議文を書いた。以来、息子の給食にだけピーマンが入らなくなった。息子は「ピーマンって何？」と言うようになった。",
-      "stat_changes": { "independence": -5, "ego": 10, "wealth": 0, "hate": 5 }
+      "stat_changes": { "independence": -1, "ego": 5, "wealth": 0, "hate": 2 }
     }
   },
   {
@@ -60,7 +60,7 @@
     "swipe_right": {
       "action_text": "「主役にしろ」と園長に直談判",
       "result_text": "父は翌朝、スーツ姿で園長室のドアをノックした。「うちの子はライオン向きだと思いますが」。配役は見直された。本番、息子は急遽ライオン役に。セリフを全部間違えた。",
-      "stat_changes": { "independence": 0, "ego": 10, "wealth": 0, "hate": 5 }
+      "stat_changes": { "independence": 0, "ego": 5, "wealth": 0, "hate": 2 }
     }
   },
   {
@@ -76,7 +76,7 @@
     "swipe_right": {
       "action_text": "相手の親に謝罪を要求する",
       "result_text": "父はすぐ相手の親に電話した。「お宅のお子さんにバカと言われました。謝罪をお願いします」。翌日から、けんじくんは息子を避けるようになった。",
-      "stat_changes": { "independence": -5, "ego": 0, "wealth": 0, "hate": 10 }
+      "stat_changes": { "independence": -2, "ego": 0, "wealth": 0, "hate": 2 }
     }
   }
 ]
