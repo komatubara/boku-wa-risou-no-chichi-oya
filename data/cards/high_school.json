@@ -1,0 +1,82 @@
+[
+  {
+    "card_id": "hs_01",
+    "phase": "高校",
+    "character_image": "",
+    "event_text": "模試の結果が届いた。第一志望の欄にでかでかと「E」の文字。息子は「まあ、まだ1年あるし」と気にしていない様子だが……。",
+    "swipe_left": {
+      "action_text": "「一緒に考えよう」と話す",
+      "result_text": "志望校の傾向を調べ、弱点科目を整理した。息子は自分なりのペースで勉強を続けた。",
+      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+    },
+    "swipe_right": {
+      "action_text": "月30万の受験コンサルと即契約",
+      "result_text": "コンサルは毎週息子に大量の課題を出した。息子は「勉強しろと言う人間が多すぎて、もう誰の言うことも聞きたくない」と言い始めた。",
+      "stat_changes": { "independence": -10, "ego": 10, "wealth": -20, "hate": 0 }
+    }
+  },
+  {
+    "card_id": "hs_02",
+    "phase": "高校",
+    "character_image": "",
+    "event_text": "合否確認のページ。息子と一緒に画面を開いた。「……不合格」の二文字。息子は黙ったまま自室に戻った。",
+    "swipe_left": {
+      "action_text": "「また挑戦すればいい」と支援する",
+      "result_text": "「悔しいよな。浪人して本気でやってみよう」。息子は黙ってうなずいた。翌年、別の大学に合格した。",
+      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+    },
+    "swipe_right": {
+      "action_text": "「出題ミスがあったはずだ」と乗り込む",
+      "result_text": "父は翌朝、大学の入試事務局に電話した。「うちの子が落ちるはずがない。問題に不備があったのでは」。事務局は開示請求の手続きを案内した。息子に「お父さんと口きかない」と言われた。",
+      "stat_changes": { "independence": -15, "ego": 5, "wealth": 0, "hate": 25 }
+    }
+  },
+  {
+    "card_id": "hs_03",
+    "phase": "高校",
+    "character_image": "",
+    "event_text": "「授業中にスマホ使ってたのがバレて没収された。一週間返ってこないって……」。息子が気まずそうに言う。",
+    "swipe_left": {
+      "action_text": "「校則は守ろうね」と諭す",
+      "result_text": "息子は不満そうだったが、返却後は授業中にスマホを触らなくなった。",
+      "stat_changes": { "independence": 5, "ego": -10, "wealth": 0, "hate": 0 }
+    },
+    "swipe_right": {
+      "action_text": "「通信料を返金しろ」と抗議する",
+      "result_text": "父は学校へ「没収期間の通信料2800円を返金してほしい」と申し入れた。先生は絶句した。この話は職員室で長く語り継がれた。",
+      "stat_changes": { "independence": 0, "ego": 10, "wealth": 0, "hate": 15 }
+    }
+  },
+  {
+    "card_id": "hs_04",
+    "phase": "高校",
+    "character_image": "",
+    "event_text": "息子が最近元気がない。理由を聞くと「彼女と別れた」とだけ言って部屋に引きこもった。",
+    "swipe_left": {
+      "action_text": "話を聞いてそっとしておく",
+      "result_text": "「まあ、飯だけは食えよ」。そっとしておいた。二週間後、息子はまた普通に話しかけてきた。",
+      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+    },
+    "swipe_right": {
+      "action_text": "相手の家に謝罪を要求しに行く",
+      "result_text": "父は相手の女の子の家を突き止め、インターフォンを鳴らした。「うちの息子が傷ついている。謝罪をお願いしたい」。相手の母親が出てきた後の30分は、父が謝り続ける時間になった。息子は以降、恋愛の話を一切しなくなった。",
+      "stat_changes": { "independence": -10, "ego": 5, "wealth": 0, "hate": 20 }
+    }
+  },
+  {
+    "card_id": "hs_05",
+    "phase": "高校",
+    "character_image": "",
+    "event_text": "「お父さん、俺、美大行きたいかも」。夕食中に息子が切り出した。これまで理系コースに進んでいたのに。",
+    "swipe_left": {
+      "action_text": "本人の意見を尊重して話し合う",
+      "result_text": "「いつから思ってたんだ」。二人で進路の可能性をゆっくり話し合った。息子は自分の意志で決断した。",
+      "stat_changes": { "independence": 15, "ego": -5, "wealth": 0, "hate": 0 }
+    },
+    "swipe_right": {
+      "action_text": "「有名大学以外あり得ない」と完全無視",
+      "result_text": "「ふざけるな。お前の志望はもう決まってる」。翌日から父は息子の部屋の前に理系参考書を積み上げた。息子の部屋の鍵が、内側からかかるようになった。",
+      "stat_changes": { "independence": -20, "ego": 15, "wealth": 0, "hate": 0 }
+    }
+  }
+]

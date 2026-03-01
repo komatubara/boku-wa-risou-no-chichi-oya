@@ -1,0 +1,82 @@
+[
+  {
+    "card_id": "jh_01",
+    "phase": "中学校",
+    "character_image": "",
+    "event_text": "息子が成績表を隠しながら帰ってきた。「数学が……赤点だったかも」。前回より20点下がっている。",
+    "swipe_left": {
+      "action_text": "一緒に勉強の仕方を見直す",
+      "result_text": "二人で問題集を広げ、苦手な単元を洗い出した。次のテストで8点上がった。地味だが、本物の前進。",
+      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+    },
+    "swipe_right": {
+      "action_text": "「担任のせいだ、担任を変えろ」",
+      "result_text": "父は翌朝、学校に乗り込んだ。「先生の教え方が悪いから成績が落ちた。担任を替えてほしい」。校長が対応したが却下。以来、担任は息子の答案を採点するたびに深いため息をつくようになった。",
+      "stat_changes": { "independence": -10, "ego": 5, "wealth": 0, "hate": 20 }
+    }
+  },
+  {
+    "card_id": "jh_02",
+    "phase": "中学校",
+    "character_image": "",
+    "event_text": "「グループLINEで既読無視されてる……」。息子がスマホを見ながらぼそっと言った。クラスの友達数人に無視されているらしい。",
+    "swipe_left": {
+      "action_text": "自分たちで解決するよう見守る",
+      "result_text": "「まず自分から話しかけてみたら」。数日後、「なんか仲直りできた」と報告が来た。理由はよく分からないらしかった。",
+      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+    },
+    "swipe_right": {
+      "action_text": "弁護士を連れて相手の親に乗り込む",
+      "result_text": "父は弁護士に依頼し、「SNSでの仲間外れは人格権の侵害にあたる可能性がある」と相手の保護者に通知書を送った。翌日、クラスは騒然となった。息子のあだ名は「弁護士くん」になった。",
+      "stat_changes": { "independence": -15, "ego": 0, "wealth": -15, "hate": 20 }
+    }
+  },
+  {
+    "card_id": "jh_03",
+    "phase": "中学校",
+    "character_image": "",
+    "event_text": "「レギュラー落ちた……」。帰宅した息子の声に覇気がない。顧問から「もう少し練習が必要」と言われたそうだ。",
+    "swipe_left": {
+      "action_text": "「練習を頑張ろう」と励ます",
+      "result_text": "「悔しいよな。でもそれだけ上を見られてるってことだよ」。息子は翌日から自主練を始め、2ヶ月後にレギュラーへ復帰した。",
+      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+    },
+    "swipe_right": {
+      "action_text": "「顧問を替えろ」と要求する",
+      "result_text": "父は保護者会で立ち上がった。「選考基準が不透明だ。顧問の指導力に問題がある」。保護者会は紛糾し、学校側は調査を開始。息子は「もう部活に行きたくない」と言い始めた。",
+      "stat_changes": { "independence": -15, "ego": 5, "wealth": 0, "hate": 20 }
+    }
+  },
+  {
+    "card_id": "jh_04",
+    "phase": "中学校",
+    "character_image": "",
+    "event_text": "「修学旅行の班決めで……最後まで余っちゃった」。息子がうつむいて言った。先生が調整して入れてもらったらしい。",
+    "swipe_left": {
+      "action_text": "担任に相談し見守る",
+      "result_text": "旅行後、「まあ普通に楽しかった」と息子は報告した。それで十分だった。",
+      "stat_changes": { "independence": 5, "ego": -5, "wealth": 0, "hate": 0 }
+    },
+    "swipe_right": {
+      "action_text": "「人気グループに入れろ」と担任に圧力",
+      "result_text": "父は担任に電話した。「あのグループのリーダーの家と付き合いがあるので、Aグループに入れてもらえますか」。担任は沈黙した。修学旅行で息子は6人部屋に一人になった。",
+      "stat_changes": { "independence": -15, "ego": 5, "wealth": 0, "hate": 15 }
+    }
+  },
+  {
+    "card_id": "jh_05",
+    "phase": "中学校",
+    "character_image": "",
+    "event_text": "「今日の給食にレバー出てさ、食べられなかった。先生に『もったいない』って言われた」。息子が不満そうに話す。",
+    "swipe_left": {
+      "action_text": "「少しずつ食べてみよう」と話す",
+      "result_text": "次の週、息子は「少しだけ食べたら褒めてもらった」と嬉しそうに報告した。",
+      "stat_changes": { "independence": 5, "ego": -5, "wealth": 0, "hate": 0 }
+    },
+    "swipe_right": {
+      "action_text": "「給食費を返金しろ」と要求する",
+      "result_text": "父は教育委員会に「嫌いなものを食べられなかった分の給食費は返金されるべきだ」と文書で申し入れた。丁寧な却下通知が届いた。地域の保護者SNSに「モンペ出現」と書き込まれた。",
+      "stat_changes": { "independence": 0, "ego": 10, "wealth": 0, "hate": 25 }
+    }
+  }
+]
