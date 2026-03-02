@@ -2,7 +2,7 @@
   {
     "card_id": "inf_01",
     "phase": "幼児",
-    "character_image": "",
+    "character_image": "assets/images/cards/infant/inf_01.png",
     "event_text": "保育園から帰宅した息子の目が赤い。「ゆうたくんがおもちゃ取っちゃった……」とぐずっている。",
     "swipe_left": {
       "action_text": "「負けることもあるよ」と慰める",
@@ -18,7 +18,7 @@
   {
     "card_id": "inf_02",
     "phase": "幼児",
-    "character_image": "",
+    "character_image": "assets/images/cards/infant/inf_02.png",
     "event_text": "迎えに行くと、息子の膝に小さな絆創膏が貼ってある。先生が「少し転んでしまって」と教えてくれた。",
     "swipe_left": {
       "action_text": "お礼を言って家で手当て",
@@ -34,7 +34,7 @@
   {
     "card_id": "inf_03",
     "phase": "幼児",
-    "character_image": "",
+    "character_image": "assets/images/cards/infant/inf_03.png",
     "event_text": "「先生にピーマン食べなさいって言われたー」と息子が不満げに帰ってきた。ピーマンが嫌いなのは父も知っている。",
     "swipe_left": {
       "action_text": "「食べ物は大事にしようね」と話す",
@@ -50,7 +50,7 @@
   {
     "card_id": "inf_04",
     "phase": "幼児",
-    "character_image": "",
+    "character_image": "assets/images/cards/infant/inf_04.png",
     "event_text": "「おさるさんの役になった」と息子が帰ってきた。「ライオンがよかった……」と少し不満げだ。",
     "swipe_left": {
       "action_text": "「どんな役でも全力でやろう」と励ます",
@@ -66,7 +66,7 @@
   {
     "card_id": "inf_05",
     "phase": "幼児",
-    "character_image": "",
+    "character_image": "assets/images/cards/infant/inf_05.png",
     "event_text": "玄関を開けると息子がわんわん泣いていた。「けんじくんにバカって言われた！」。",
     "swipe_left": {
       "action_text": "話を聞いて仲直りを促す",

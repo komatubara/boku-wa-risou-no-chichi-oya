@@ -2,81 +2,131 @@
   {
     "card_id": "elem_01",
     "phase": "小学校",
-    "character_image": "",
+    "character_image": "assets/images/cards/elementary/elem_01.png",
     "event_text": "「ただいまー！」息子が玄関を開けた。体操服が全面、泥まみれだった。「転んだわけじゃないよ？砂場で遊んでただけ！」",
     "swipe_left": {
       "action_text": "一緒に洗う",
       "result_text": "汚れた体操服を笑いながら二人で洗った。息子は明日も元気に学校へ行った。体操服は三回洗ってもまだ少し茶色かった。",
-      "stat_changes": { "independence": 5, "ego": -5, "wealth": 0, "hate": 0 }
+      "stat_changes": {
+        "independence": 5,
+        "ego": -5,
+        "wealth": 0,
+        "hate": 0
+      }
     },
     "swipe_right": {
       "action_text": "学校に洗わせる",
       "result_text": "翌朝、父は学校に電話した。「汚れた体操服を洗って返してください」。担任は絶句し、校長も呼ばれた。帰宅した息子の第一声は「なんで電話したの……クラスで笑われた」だった。",
-      "stat_changes": { "independence": -2, "ego": 3, "wealth": 0, "hate": 3 }
+      "stat_changes": {
+        "independence": -2,
+        "ego": 3,
+        "wealth": 0,
+        "hate": 3
+      }
     }
   },
   {
     "card_id": "elem_02",
     "phase": "小学校",
-    "character_image": "",
+    "character_image": "assets/images/cards/elementary/elem_02.png",
     "event_text": "今朝で五日連続、遅刻ギリギリ。「眠いんだもん」と目をこすりながらランドセルを背負う息子。このままでは本格的にまずい。",
     "swipe_left": {
       "action_text": "早寝の習慣をつける",
       "result_text": "一週間後、息子は自分で目覚ましをかけて起きるようになった。「えらいな」と父は思った。小さな、確実な一歩。",
-      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+      "stat_changes": {
+        "independence": 10,
+        "ego": -5,
+        "wealth": 0,
+        "hate": 0
+      }
     },
     "swipe_right": {
       "action_text": "担任に迎えに来させる",
       "result_text": "父は学校に電話した。「毎朝、息子を起こしに来てもらえますか」。担任は五秒間沈黙した後、丁重に断った。父は今度は教育委員会に電話した。息子は「もう学校行きたくない」とつぶやいた。",
-      "stat_changes": { "independence": -5, "ego": 3, "wealth": 0, "hate": 4 }
+      "stat_changes": {
+        "independence": -5,
+        "ego": 3,
+        "wealth": 0,
+        "hate": 4
+      }
     }
   },
   {
     "card_id": "elem_03",
     "phase": "小学校",
-    "character_image": "",
+    "character_image": "assets/images/cards/elementary/elem_03.png",
     "event_text": "「転んじゃったー……」。アンカーを任された息子は、ゴール直前で盛大に転倒。チームは最下位。膝から血が出ている。",
     "swipe_left": {
       "action_text": "「よく頑張った」と褒める",
       "result_text": "傷だらけの膝をテープで留めながら、父は思った。転んでも走り切ろうとした。それで十分だ。息子はもう来年の話をしていた。",
-      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+      "stat_changes": {
+        "independence": 10,
+        "ego": -5,
+        "wealth": 0,
+        "hate": 0
+      }
     },
     "swipe_right": {
       "action_text": "ハンデをつけさせる",
       "result_text": "父は翌日学校へ「足の遅い子には10メートルのハンデを設けてほしい」と申し入れた。先生は「それは……」と絶句。翌年の運動会から、息子のあだ名は「ハンデくん」になった。",
-      "stat_changes": { "independence": -4, "ego": 5, "wealth": 0, "hate": 5 }
+      "stat_changes": {
+        "independence": -4,
+        "ego": 5,
+        "wealth": 0,
+        "hate": 5
+      }
     }
   },
   {
     "card_id": "elem_04",
     "phase": "小学校",
-    "character_image": "",
+    "character_image": "assets/images/cards/elementary/elem_04.png",
     "event_text": "運動会の当日、息子の額に手を当てると38度あった。「行きたかった……」と泣きながらベッドに倒れ込む。",
     "swipe_left": {
       "action_text": "「来年また頑張ろう」と励ます",
       "result_text": "翌日、熱は下がった。クラスの友達から「来年一緒に頑張ろう」と手紙が届いた。息子はそれを大事にランドセルにしまった。",
-      "stat_changes": { "independence": 5, "ego": -5, "wealth": 0, "hate": 0 }
+      "stat_changes": {
+        "independence": 5,
+        "ego": -5,
+        "wealth": 0,
+        "hate": 0
+      }
     },
     "swipe_right": {
       "action_text": "運動会の再開催を要求する",
       "result_text": "父は即座に学校に電話した。「うちの子が欠席した。再開催してください」。校長は3分間かけて断った。父は市の教育委員会にも電話した。地方ニュースに「運動会の再開催を求める保護者」として報道された。",
-      "stat_changes": { "independence": -2, "ego": 5, "wealth": -5, "hate": 8 }
+      "stat_changes": {
+        "independence": -2,
+        "ego": 5,
+        "wealth": -5,
+        "hate": 8
+      }
     }
   },
   {
     "card_id": "elem_05",
     "phase": "小学校",
-    "character_image": "",
+    "character_image": "assets/images/cards/elementary/elem_05.png",
     "event_text": "「先生に怒られた」。息子がしょんぼり帰ってきた。宿題の未提出が三回連続。担任から「お家の方に一度ご連絡を」と言われたらしい。",
     "swipe_left": {
       "action_text": "一緒にランドセルを確認する",
       "result_text": "その夜、二人でランドセルの中身を整理した。翌日から息子は自分で宿題を確認するようになった。三週間後、担任から「最近しっかりしてきました」と電話があった。",
-      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+      "stat_changes": {
+        "independence": 10,
+        "ego": -5,
+        "wealth": 0,
+        "hate": 0
+      }
     },
     "swipe_right": {
       "action_text": "「宿題をなくせ」と校長室へ",
       "result_text": "翌朝、父はネクタイを締めて学校へ乗り込んだ。「子どもは遊ぶのが仕事です。宿題は権利の侵害だ！」。校長は30分対応した。息子は「友達のお父さんに見られた」と一週間、腹痛を理由に学校を休んだ。",
-      "stat_changes": { "independence": -5, "ego": 5, "wealth": 0, "hate": 5 }
+      "stat_changes": {
+        "independence": -5,
+        "ego": 5,
+        "wealth": 0,
+        "hate": 5
+      }
     }
   }
 ]

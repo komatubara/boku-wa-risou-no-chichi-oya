@@ -2,81 +2,131 @@
   {
     "card_id": "ad_01",
     "phase": "社会人",
-    "character_image": "",
+    "character_image": "assets/images/cards/adult/ad_01.png",
     "event_text": "「また落ちた……」。息子から短いLINEが届いた。これで5社目の不合格だ。",
     "swipe_left": {
       "action_text": "「次があるよ」と励ます",
       "result_text": "「5社落ちて、まだ5社か10社かもしれない。続けろ」。素っ気ない励ましだったが、息子は「うん」と返信してきた。",
-      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+      "stat_changes": {
+        "independence": 10,
+        "ego": -5,
+        "wealth": 0,
+        "hate": 0
+      }
     },
     "swipe_right": {
       "action_text": "採用担当に「なぜ落とした」と抗議電話",
       "result_text": "父は企業の代表番号を調べ、電話した。「なぜ息子が落ちたのか理由を教えてほしい」。電話は録音され、その企業には二度とエントリーできなくなった。息子には言えなかった。",
-      "stat_changes": { "independence": -5, "ego": 3, "wealth": -5, "hate": 8 }
+      "stat_changes": {
+        "independence": -5,
+        "ego": 3,
+        "wealth": -5,
+        "hate": 8
+      }
     }
   },
   {
     "card_id": "ad_02",
     "phase": "社会人",
-    "character_image": "",
+    "character_image": "assets/images/cards/adult/ad_02.png",
     "event_text": "帰省した息子がぼそっと言った。「最近、課長に毎日怒られてる。俺のやり方が違うって……」。",
     "swipe_left": {
       "action_text": "「仕事ってそういうもの」と話す",
       "result_text": "「怒ってくれる上司がいるうちが花だ」。息子は「そんなもんか」と少し楽になった顔をした。",
-      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+      "stat_changes": {
+        "independence": 10,
+        "ego": -5,
+        "wealth": 0,
+        "hate": 0
+      }
     },
     "swipe_right": {
       "action_text": "会社に「うちの子を叱るな」と電話",
       "result_text": "父は会社の代表番号に電話し、総務→人事→課長本人と回された。翌日、息子は職場で「ママに電話してもらった人」と呼ばれるようになった。",
-      "stat_changes": { "independence": -7, "ego": 5, "wealth": 0, "hate": 8 }
+      "stat_changes": {
+        "independence": -7,
+        "ego": 5,
+        "wealth": 0,
+        "hate": 8
+      }
     }
   },
   {
     "card_id": "ad_03",
     "phase": "社会人",
-    "character_image": "",
+    "character_image": "assets/images/cards/adult/ad_03.png",
     "event_text": "息子からの連絡が減っている。心配で電話すると「最近ずっと残業で……23時とか」。声が疲れている。",
     "swipe_left": {
       "action_text": "「無理しすぎないようにね」と見守る",
       "result_text": "「しんどかったら有給取れよ。身体だけは大事にしろ」。息子は「うん、ありがとう」と短く答えた。",
-      "stat_changes": { "independence": 10, "ego": -5, "wealth": 0, "hate": 0 }
+      "stat_changes": {
+        "independence": 10,
+        "ego": -5,
+        "wealth": 0,
+        "hate": 0
+      }
     },
     "swipe_right": {
       "action_text": "会社にアポなしで乗り込む",
       "result_text": "父は会社の受付で「息子を残業させている上の人間に話がある」と告げた。警備員が呼ばれた。翌朝、息子から「二度と会社に来ないでくれ」とLINEが届いた。",
-      "stat_changes": { "independence": -7, "ego": 3, "wealth": -5, "hate": 10 }
+      "stat_changes": {
+        "independence": -7,
+        "ego": 3,
+        "wealth": -5,
+        "hate": 10
+      }
     }
   },
   {
     "card_id": "ad_04",
     "phase": "社会人",
-    "character_image": "",
+    "character_image": "assets/images/cards/adult/ad_04.png",
     "event_text": "「同僚に仕事を押し付けられてて……なんか嫌だな」と息子が愚痴をこぼした。",
     "swipe_left": {
       "action_text": "「自分で解決しなさい」と突き放す",
       "result_text": "厳しい言葉だったが、息子は翌週「なんか上手くいった」と報告してきた。",
-      "stat_changes": { "independence": 15, "ego": -5, "wealth": 0, "hate": 0 }
+      "stat_changes": {
+        "independence": 15,
+        "ego": -5,
+        "wealth": 0,
+        "hate": 0
+      }
     },
     "swipe_right": {
       "action_text": "弁護士に内容証明を送らせる",
       "result_text": "父は弁護士に「職場のパワーハラスメント」として内容証明を依頼した。会社は大混乱した。息子は「居場所がなくなった」と言い、半年後に退職した。",
-      "stat_changes": { "independence": -7, "ego": 5, "wealth": -20, "hate": 10 }
+      "stat_changes": {
+        "independence": -7,
+        "ego": 5,
+        "wealth": -20,
+        "hate": 10
+      }
     }
   },
   {
     "card_id": "ad_05",
     "phase": "社会人",
-    "character_image": "",
+    "character_image": "assets/images/cards/adult/ad_05.png",
     "event_text": "「そろそろ一人暮らししようと思ってる。会社の近くに部屋を借りたい」。息子が静かに、しかし真剣に言った。",
     "swipe_left": {
       "action_text": "「いいね、応援するよ」と送り出す",
       "result_text": "部屋探しを一緒に手伝った。引越し当日、息子は「ありがとう」と言って新しい鍵を受け取った。父はその夜、初めて家が広く感じた。",
-      "stat_changes": { "independence": 20, "ego": -10, "wealth": 0, "hate": 0 }
+      "stat_changes": {
+        "independence": 20,
+        "ego": -10,
+        "wealth": 0,
+        "hate": 0
+      }
     },
     "swipe_right": {
       "action_text": "会社の近くに自分も引っ越す",
       "result_text": "「一人では無理だ」。父は翌週、息子の会社から徒歩3分のマンションを契約した。引越し祝いに訪ねると、ドアに貼り紙があった。「来ないでください」。",
-      "stat_changes": { "independence": -9, "ego": 8, "wealth": -10, "hate": 7 }
+      "stat_changes": {
+        "independence": -9,
+        "ego": 8,
+        "wealth": -10,
+        "hate": 7
+      }
     }
   }
 ]
