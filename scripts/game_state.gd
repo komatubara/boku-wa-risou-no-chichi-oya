@@ -8,8 +8,9 @@ var params: Dictionary = {
 	"hate":         50,
 }
 
-var current_phase: int = 0  # 0=幼児 〜 4=社会人
-var card_index: int = 0     # フェーズ内カード番号（0〜4）
+var current_phase: int = 0       # 0=幼児 〜 4=社会人
+var card_index: int = 0          # フェーズ内カード番号（0〜4）
+var pending_ending_id: String = ""  # エンディング画面に渡すID
 
 const PHASES: Array[String] = ["幼児", "小学校", "中学校", "高校", "社会人"]
 const PHASE_AGES: Array[int] = [3, 9, 13, 16, 23]
@@ -77,3 +78,4 @@ func reset() -> void:
 	params = {"independence": 50, "ego": 50, "wealth": 50, "hate": 50}
 	current_phase = 0
 	card_index = 0
+	pending_ending_id = ""
