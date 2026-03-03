@@ -21,7 +21,7 @@ func _build_father() -> void:
 		return
 	var rect := TextureRect.new()
 	rect.texture = tex
-	rect.expand_mode = TextureRect.EXPAND_KEEP_ASPECT
+	rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	rect.size = Vector2(300, 300)
 	rect.position = Vector2(210, 560)

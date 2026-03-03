@@ -29,7 +29,7 @@ func _build_ui() -> void:
 		var tex := load(ICON_PATHS[key])
 		if tex:
 			icon.texture = tex
-		icon.expand_mode = TextureRect.EXPAND_KEEP_ASPECT
+		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		icon.custom_minimum_size = Vector2(48, 48)
 		col.add_child(icon)
