@@ -51,7 +51,7 @@ func _build_ui() -> void:
 
 
 func _input(event: InputEvent) -> void:
-	var tapped := (event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed) \
+	var tapped: bool = (event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed) \
 		or (event is InputEventScreenTouch and event.pressed)
 	if tapped:
 		get_tree().change_scene_to_file("res://scenes/game.tscn")
