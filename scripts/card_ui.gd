@@ -2,6 +2,8 @@ extends Control
 
 signal swipe_confirmed(direction: int)  # -1=左スワイプ  +1=右スワイプ
 signal flip_done()
+signal swipe_preview(stat_changes: Dictionary)  # ドラッグ中：該当方向のstat_changesを通知
+signal swipe_preview_cleared()                   # ドラッグ中断・リセット時
 
 const SWIPE_THRESHOLD := 100.0
 const CARD_W := 640.0
@@ -76,6 +78,7 @@ func set_card(data: Dictionary) -> void:
 	_right_hint.visible = false
 	_is_animating = false
 	_is_dragging = false
+	swipe_preview_cleared.emit()
 
 
 func _input(event: InputEvent) -> void:
@@ -104,6 +107,13 @@ func _input(event: InputEvent) -> void:
 		var offset := _get_event_pos(event).x - _drag_start.x
 		_card_panel.position.x = CARD_X + offset
 		_card_panel.rotation = offset * 0.0003  # わずかに傾ける
+		# スワイプ方向が確定したらプレビュー表示
+		if offset > 20:
+			swipe_preview.emit(_card_data["swipe_right"]["stat_changes"])
+		elif offset < -20:
+			swipe_preview.emit(_card_data["swipe_left"]["stat_changes"])
+		else:
+			swipe_preview_cleared.emit()
 
 
 func _is_press_start(event: InputEvent) -> bool:
@@ -137,6 +147,7 @@ func _on_drag_end(offset: float) -> void:
 func _return_to_center() -> void:
 	_left_hint.visible = false
 	_right_hint.visible = false
+	swipe_preview_cleared.emit()
 	var tw := create_tween().set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
 	tw.tween_property(_card_panel, "position:x", CARD_X, 0.4)
 	tw.parallel().tween_property(_card_panel, "rotation", 0.0, 0.4)
@@ -153,6 +164,7 @@ func _animate_swipe_out(direction: int) -> void:
 # カードを反転させて result_text を表示する（_is_animating は set_card まで維持）
 func flip_to_result(result_text: String) -> void:
 	_is_animating = true
+	swipe_preview_cleared.emit()
 	# カードを中央に戻す
 	_card_panel.position.x = CARD_X
 	_card_panel.rotation = 0.0

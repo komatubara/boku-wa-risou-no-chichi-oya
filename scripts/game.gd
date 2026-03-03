@@ -36,6 +36,8 @@ func _setup_card_ui() -> void:
 	add_child(_card_ui)
 	_card_ui.swipe_confirmed.connect(_on_swipe_confirmed)
 	_card_ui.flip_done.connect(_on_flip_done)
+	_card_ui.swipe_preview.connect(_param_icons.show_preview)
+	_card_ui.swipe_preview_cleared.connect(_param_icons.clear_preview)
 
 
 func _connect_signals() -> void:
