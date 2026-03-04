@@ -11,7 +11,16 @@ const CARD_H := 580.0
 const CARD_X := 40.0   # (720 - 640) / 2
 const CARD_Y := 200.0
 
+const PHASE_BG := {
+	"幼児": "res://assets/images/ui/card_bg_infant.png",
+	"小学校": "res://assets/images/ui/card_bg_elementary.png",
+	"中学校": "res://assets/images/ui/card_bg_junior_high.png",
+	"高校": "res://assets/images/ui/card_bg_high_school.png",
+	"社会人": "res://assets/images/ui/card_bg_adult.png",
+}
+
 var _card_panel: Panel
+var _card_bg: TextureRect
 var _char_image: TextureRect
 var _event_label: Label
 var _left_hint: Label
@@ -40,14 +49,13 @@ func _build_ui() -> void:
 	_card_panel.clip_contents = true  # 子ノードをカード内にクリップ
 	add_child(_card_panel)
 
-	# カード背景画像（羊皮紙風ピクセルアート）
-	var card_bg := TextureRect.new()
-	card_bg.texture = load("res://assets/images/ui/card_bg.png")
-	card_bg.expand_mode = TextureRect.EXPAND_KEEP_SIZE
-	card_bg.stretch_mode = TextureRect.STRETCH_SCALE
-	card_bg.size = Vector2(CARD_W, CARD_H)
-	card_bg.position = Vector2(0, 0)
-	_card_panel.add_child(card_bg)
+	# カード背景画像（フェーズ別ピクセルアート）
+	_card_bg = TextureRect.new()
+	_card_bg.expand_mode = TextureRect.EXPAND_KEEP_SIZE
+	_card_bg.stretch_mode = TextureRect.STRETCH_SCALE
+	_card_bg.size = Vector2(CARD_W, CARD_H)
+	_card_bg.position = Vector2(0, 0)
+	_card_panel.add_child(_card_bg)
 
 	# キャラクター画像（カード上部）
 	_char_image = TextureRect.new()
@@ -93,6 +101,10 @@ func set_card(data: Dictionary) -> void:
 	_event_label.text = data["event_text"]
 	_left_hint.text = "◀ " + data["swipe_left"]["action_text"]
 	_right_hint.text = data["swipe_right"]["action_text"] + " ▶"
+	# フェーズ別背景を読み込む
+	var phase: String = data.get("phase", "")
+	var bg_path: String = PHASE_BG.get(phase, "res://assets/images/ui/card_bg.png")
+	_card_bg.texture = load(bg_path)
 	# キャラクター画像を読み込む
 	var img_path: String = data.get("character_image", "")
 	_char_image.texture = load(img_path) if img_path != "" else null
