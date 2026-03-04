@@ -30,18 +30,23 @@ func _ready() -> void:
 
 
 func _build_ui() -> void:
-	# カードパネル（白ベージュ・角丸）
+	# カードパネル（透明・スワイプ変換の基準ノード）
 	_card_panel = Panel.new()
 	_card_panel.size = Vector2(CARD_W, CARD_H)
 	_card_panel.position = Vector2(CARD_X, CARD_Y)
 	var style := StyleBoxFlat.new()
-	style.bg_color = Color(0.97, 0.95, 0.88)
-	style.corner_radius_top_left    = 12
-	style.corner_radius_top_right   = 12
-	style.corner_radius_bottom_left = 12
-	style.corner_radius_bottom_right = 12
+	style.bg_color = Color(0, 0, 0, 0)  # 透明（背景はTextureRectで描画）
 	_card_panel.add_theme_stylebox_override("panel", style)
 	add_child(_card_panel)
+
+	# カード背景画像（羊皮紙風ピクセルアート）
+	var card_bg := TextureRect.new()
+	card_bg.texture = load("res://assets/images/ui/card_bg.png")
+	card_bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	card_bg.stretch_mode = TextureRect.STRETCH_SCALE
+	card_bg.size = Vector2(CARD_W, CARD_H)
+	card_bg.position = Vector2(0, 0)
+	_card_panel.add_child(card_bg)
 
 	# キャラクター画像（カード上部）
 	_char_image = TextureRect.new()
