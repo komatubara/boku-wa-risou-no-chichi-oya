@@ -50,11 +50,11 @@ func _build_ui() -> void:
 	_card_panel.clip_contents = true  # 子ノードをカード内にクリップ
 	add_child(_card_panel)
 
-	# カード背景画像（card_id別ピクセルアート・カード全体に表示）
+	# カード背景画像（キャラクター画像エリアと同じ上部290pxに収める）
 	_card_bg = TextureRect.new()
 	_card_bg.expand_mode = TextureRect.EXPAND_KEEP_SIZE
-	_card_bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED  # 歪み防止
-	_card_bg.size = Vector2(CARD_W, CARD_H)
+	_card_bg.stretch_mode = TextureRect.STRETCH_SCALE  # 上部エリアを確実に埋める
+	_card_bg.size = Vector2(CARD_W, IMAGE_H)
 	_card_bg.position = Vector2(0, 0)
 	_card_panel.add_child(_card_bg)
 
