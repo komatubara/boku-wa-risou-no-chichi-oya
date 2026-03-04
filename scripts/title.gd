@@ -6,6 +6,7 @@ func _ready() -> void:
 	_build_father()
 	_build_title()
 	_build_buttons()
+	BgmManager.stop_bgm()
 
 
 func _build_bg() -> void:

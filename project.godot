@@ -23,6 +23,7 @@ config/run/main_scene="uid://ct5b3kx2nfh17"
 
 GameState="*res://scripts/game_state.gd"
 CardManager="*res://scripts/card_manager.gd"
+BgmManager="*res://scripts/bgm_manager.gd"
 
 [display]
 

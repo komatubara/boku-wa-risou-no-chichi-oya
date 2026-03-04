@@ -12,6 +12,7 @@ func _ready() -> void:
 	_setup_card_ui()
 	_connect_signals()
 	_load_and_show_card()
+	BgmManager.play_phase(GameState.current_phase)
 
 
 func _setup_bg() -> void:

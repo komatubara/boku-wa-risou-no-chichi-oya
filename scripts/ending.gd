@@ -2,6 +2,7 @@ extends Control
 
 
 func _ready() -> void:
+	BgmManager.stop_bgm()
 	_build_ui()
 
 
