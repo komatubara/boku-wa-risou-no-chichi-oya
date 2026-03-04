@@ -57,8 +57,8 @@ func _build_ui() -> void:
 		rect.texture = tex
 		rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		rect.size = Vector2(220, 220)
-		rect.position = Vector2(250, 700)
+		rect.size = Vector2(360, 200)
+		rect.position = Vector2(180, 710)
 		add_child(rect)
 
 	# 「もう一度」ボタン

@@ -24,8 +24,8 @@ func _build_father() -> void:
 	rect.texture = tex
 	rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	rect.size = Vector2(300, 300)
-	rect.position = Vector2(210, 560)
+	rect.size = Vector2(400, 220)
+	rect.position = Vector2(160, 570)
 	add_child(rect)
 
 

@@ -27,7 +27,7 @@ var _event_label: Label
 var _left_hint: Label
 var _right_hint: Label
 
-const IMAGE_H := 290.0  # カード上部のキャラクター画像エリア高さ
+const IMAGE_H := 400.0  # カード上部のキャラクター画像エリア高さ
 
 var _card_data: Dictionary = {}
 var _drag_start: Vector2 = Vector2.ZERO
@@ -50,7 +50,7 @@ func _build_ui() -> void:
 	_card_panel.clip_contents = true  # 子ノードをカード内にクリップ
 	add_child(_card_panel)
 
-	# カード背景画像（キャラクター画像エリアと同じ上部290pxに収める）
+	# カード背景画像（キャラクター画像エリアと同じ上部400pxに収める）
 	_card_bg = TextureRect.new()
 	_card_bg.expand_mode = TextureRect.EXPAND_KEEP_SIZE
 	_card_bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED  # 比率を保ちつつ枠を埋める
