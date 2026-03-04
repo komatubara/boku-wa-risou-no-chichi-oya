@@ -21,6 +21,8 @@ const RUNTIME_ONLY_SCRIPTS: Array[String] = [
 	"res://scripts/param_icons.gd",
 	"res://scripts/title.gd",
 	"res://scripts/game.gd",
+	"res://scripts/phase_transition.gd",
+	"res://scripts/ending.gd",
 ]
 
 
