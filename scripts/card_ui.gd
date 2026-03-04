@@ -37,12 +37,13 @@ func _build_ui() -> void:
 	var style := StyleBoxFlat.new()
 	style.bg_color = Color(0, 0, 0, 0)  # 透明（背景はTextureRectで描画）
 	_card_panel.add_theme_stylebox_override("panel", style)
+	_card_panel.clip_contents = true  # 子ノードをカード内にクリップ
 	add_child(_card_panel)
 
 	# カード背景画像（羊皮紙風ピクセルアート）
 	var card_bg := TextureRect.new()
 	card_bg.texture = load("res://assets/images/ui/card_bg.png")
-	card_bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	card_bg.expand_mode = TextureRect.EXPAND_KEEP_SIZE
 	card_bg.stretch_mode = TextureRect.STRETCH_SCALE
 	card_bg.size = Vector2(CARD_W, CARD_H)
 	card_bg.position = Vector2(0, 0)
@@ -50,7 +51,7 @@ func _build_ui() -> void:
 
 	# キャラクター画像（カード上部）
 	_char_image = TextureRect.new()
-	_char_image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	_char_image.expand_mode = TextureRect.EXPAND_KEEP_SIZE
 	_char_image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	_char_image.size = Vector2(CARD_W, IMAGE_H)
 	_char_image.position = Vector2(0, 0)
