@@ -40,4 +40,8 @@ func stop_bgm(fade_sec: float = 0.5) -> void:
 	var tw := create_tween()
 	tw.tween_property(_player, "volume_db", -60.0, fade_sec)
 	tw.tween_callback(_player.stop)
-	tw.tween_callback(func() -> void: _player.volume_db = 0.0)
+	tw.tween_callback(_reset_volume)
+
+
+func _reset_volume() -> void:
+	_player.volume_db = 0.0
