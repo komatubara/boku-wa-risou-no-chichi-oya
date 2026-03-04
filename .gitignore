@@ -14,3 +14,4 @@ Thumbs.db
 # Claude local settings (APIキーを含むため)
 .claude/settings.local.json
 .mcp.json
+.env
