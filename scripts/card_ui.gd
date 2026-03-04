@@ -101,10 +101,12 @@ func set_card(data: Dictionary) -> void:
 	_event_label.text = data["event_text"]
 	_left_hint.text = "◀ " + data["swipe_left"]["action_text"]
 	_right_hint.text = data["swipe_right"]["action_text"] + " ▶"
-	# フェーズ別背景を読み込む
-	var phase: String = data.get("phase", "")
-	var bg_path: String = PHASE_BG.get(phase, "res://assets/images/ui/card_bg.png")
-	_card_bg.texture = load(bg_path)
+	# カード背景: card_idで自動紐付け、なければフェーズ背景にフォールバック
+	var card_id: String = data.get("card_id", "")
+	var bg_path: String = "res://assets/images/ui/card_bgs/%s.png" % card_id
+	if not ResourceLoader.exists(bg_path):
+		bg_path = PHASE_BG.get(data.get("phase", ""), "")
+	_card_bg.texture = load(bg_path) if bg_path != "" else null
 	# キャラクター画像を読み込む
 	var img_path: String = data.get("character_image", "")
 	_char_image.texture = load(img_path) if img_path != "" else null
