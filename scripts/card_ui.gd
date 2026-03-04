@@ -53,7 +53,7 @@ func _build_ui() -> void:
 	# カード背景画像（キャラクター画像エリアと同じ上部290pxに収める）
 	_card_bg = TextureRect.new()
 	_card_bg.expand_mode = TextureRect.EXPAND_KEEP_SIZE
-	_card_bg.stretch_mode = TextureRect.STRETCH_SCALE  # 上部エリアを確実に埋める
+	_card_bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED  # 比率を保ちつつ枠を埋める
 	_card_bg.size = Vector2(CARD_W, IMAGE_H)
 	_card_bg.position = Vector2(0, 0)
 	_card_panel.add_child(_card_bg)
