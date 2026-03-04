@@ -12,9 +12,12 @@ const CARD_X := 40.0   # (720 - 640) / 2
 const CARD_Y := 200.0
 
 var _card_panel: Panel
+var _char_image: TextureRect
 var _event_label: Label
 var _left_hint: Label
 var _right_hint: Label
+
+const IMAGE_H := 290.0  # カード上部のキャラクター画像エリア高さ
 
 var _card_data: Dictionary = {}
 var _drag_start: Vector2 = Vector2.ZERO
@@ -27,23 +30,36 @@ func _ready() -> void:
 
 
 func _build_ui() -> void:
-	# カードパネル
+	# カードパネル（白ベージュ・角丸）
 	_card_panel = Panel.new()
 	_card_panel.size = Vector2(CARD_W, CARD_H)
 	_card_panel.position = Vector2(CARD_X, CARD_Y)
+	var style := StyleBoxFlat.new()
+	style.bg_color = Color(0.97, 0.95, 0.88)
+	style.corner_radius_top_left    = 12
+	style.corner_radius_top_right   = 12
+	style.corner_radius_bottom_left = 12
+	style.corner_radius_bottom_right = 12
+	_card_panel.add_theme_stylebox_override("panel", style)
 	add_child(_card_panel)
 
-	# イベントテキスト
+	# キャラクター画像（カード上部）
+	_char_image = TextureRect.new()
+	_char_image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	_char_image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	_char_image.size = Vector2(CARD_W, IMAGE_H)
+	_char_image.position = Vector2(0, 0)
+	_card_panel.add_child(_char_image)
+
+	# イベントテキスト（カード下部）
 	_event_label = Label.new()
-	_event_label.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	_event_label.add_theme_constant_override("margin_left", 24)
-	_event_label.add_theme_constant_override("margin_right", 24)
-	_event_label.add_theme_constant_override("margin_top", 24)
-	_event_label.add_theme_constant_override("margin_bottom", 24)
+	_event_label.size = Vector2(CARD_W - 48, CARD_H - IMAGE_H - 16)
+	_event_label.position = Vector2(24, IMAGE_H + 8)
 	_event_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_event_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	_event_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	_event_label.add_theme_font_size_override("font_size", 24)
+	_event_label.add_theme_color_override("font_color", Color(0.1, 0.1, 0.15))
 	_card_panel.add_child(_event_label)
 
 	# アクションヒント（スワイプ開始時のみ表示）
@@ -71,6 +87,10 @@ func set_card(data: Dictionary) -> void:
 	_event_label.text = data["event_text"]
 	_left_hint.text = "◀ " + data["swipe_left"]["action_text"]
 	_right_hint.text = data["swipe_right"]["action_text"] + " ▶"
+	# キャラクター画像を読み込む
+	var img_path: String = data.get("character_image", "")
+	_char_image.texture = load(img_path) if img_path != "" else null
+	_char_image.visible = _char_image.texture != null
 	_card_panel.position = Vector2(CARD_X, CARD_Y)
 	_card_panel.rotation = 0.0
 	_card_panel.scale = Vector2.ONE
