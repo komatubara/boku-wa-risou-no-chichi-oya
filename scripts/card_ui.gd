@@ -22,6 +22,7 @@ const PHASE_BG := {
 var _card_panel: Panel
 var _card_bg: TextureRect
 var _char_image: TextureRect
+var _text_bg: Panel    # テキストエリアの不透明背景
 var _event_label: Label
 var _left_hint: Label
 var _right_hint: Label
@@ -44,15 +45,15 @@ func _build_ui() -> void:
 	_card_panel.size = Vector2(CARD_W, CARD_H)
 	_card_panel.position = Vector2(CARD_X, CARD_Y)
 	var style := StyleBoxFlat.new()
-	style.bg_color = Color(0, 0, 0, 0)  # 透明（背景はTextureRectで描画）
+	style.bg_color = Color(0.95, 0.91, 0.78)  # 羊皮紙ベージュ（背景画像がない場合のベース）
 	_card_panel.add_theme_stylebox_override("panel", style)
 	_card_panel.clip_contents = true  # 子ノードをカード内にクリップ
 	add_child(_card_panel)
 
-	# カード背景画像（フェーズ別ピクセルアート）
+	# カード背景画像（card_id別ピクセルアート・カード全体に表示）
 	_card_bg = TextureRect.new()
 	_card_bg.expand_mode = TextureRect.EXPAND_KEEP_SIZE
-	_card_bg.stretch_mode = TextureRect.STRETCH_SCALE
+	_card_bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED  # 歪み防止
 	_card_bg.size = Vector2(CARD_W, CARD_H)
 	_card_bg.position = Vector2(0, 0)
 	_card_panel.add_child(_card_bg)
@@ -64,6 +65,15 @@ func _build_ui() -> void:
 	_char_image.size = Vector2(CARD_W, IMAGE_H)
 	_char_image.position = Vector2(0, 0)
 	_card_panel.add_child(_char_image)
+
+	# テキストエリア不透明背景（羊皮紙）
+	_text_bg = Panel.new()
+	_text_bg.size = Vector2(CARD_W, CARD_H - IMAGE_H)
+	_text_bg.position = Vector2(0, IMAGE_H)
+	var text_style := StyleBoxFlat.new()
+	text_style.bg_color = Color(0.95, 0.91, 0.78)
+	_text_bg.add_theme_stylebox_override("panel", text_style)
+	_card_panel.add_child(_text_bg)
 
 	# イベントテキスト（カード下部）
 	_event_label = Label.new()
