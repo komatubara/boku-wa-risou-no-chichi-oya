@@ -33,6 +33,7 @@ var _card_data: Dictionary = {}
 var _drag_start: Vector2 = Vector2.ZERO
 var _is_dragging: bool = false
 var _is_animating: bool = false  # アニメーション中は入力を無視
+var _preview_direction: int = 0  # 0=なし / 1=右 / -1=左（重複シグナル発火防止）
 
 
 func _ready() -> void:
@@ -129,6 +130,7 @@ func set_card(data: Dictionary) -> void:
 	_right_hint.visible = false
 	_is_animating = false
 	_is_dragging = false
+	_preview_direction = 0
 	swipe_preview_cleared.emit()
 
 
@@ -158,13 +160,20 @@ func _input(event: InputEvent) -> void:
 		var offset := _get_event_pos(event).x - _drag_start.x
 		_card_panel.position.x = CARD_X + offset
 		_card_panel.rotation = offset * 0.0003  # わずかに傾ける
-		# スワイプ方向が確定したらプレビュー表示
+		# 方向が変わったときのみシグナルを発火（毎フレーム発火を防止）
+		var new_dir: int = 0
 		if offset > 20:
-			swipe_preview.emit(_card_data["swipe_right"]["stat_changes"])
+			new_dir = 1
 		elif offset < -20:
-			swipe_preview.emit(_card_data["swipe_left"]["stat_changes"])
-		else:
-			swipe_preview_cleared.emit()
+			new_dir = -1
+		if new_dir != _preview_direction:
+			_preview_direction = new_dir
+			if new_dir == 1:
+				swipe_preview.emit(_card_data["swipe_right"]["stat_changes"])
+			elif new_dir == -1:
+				swipe_preview.emit(_card_data["swipe_left"]["stat_changes"])
+			else:
+				swipe_preview_cleared.emit()
 
 
 func _is_press_start(event: InputEvent) -> bool:

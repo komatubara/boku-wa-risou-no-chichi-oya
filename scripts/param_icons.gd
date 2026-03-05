@@ -1,6 +1,10 @@
 extends Control
 
 const PARAM_KEYS: Array[String] = ["independence", "ego", "wealth", "hate"]
+const ICON_SPACING := 170   # アイコン列の間隔
+const ICON_MARGIN  := 20    # 左端マージン
+const ICON_COL_W   := 160   # 1列の幅
+const ICON_COL_H   := 110   # 1列の高さ
 const ICON_PATHS: Dictionary = {
 	"independence": "res://assets/images/icons/icon_independence.png",
 	"ego":          "res://assets/images/icons/icon_ego.png",
@@ -21,8 +25,8 @@ func _build_ui() -> void:
 	for i in range(4):
 		var key := PARAM_KEYS[i]
 		var col := VBoxContainer.new()
-		col.position = Vector2(i * 170 + 20, 0)
-		col.size = Vector2(160, 110)
+		col.position = Vector2(i * ICON_SPACING + ICON_MARGIN, 0)
+		col.size = Vector2(ICON_COL_W, ICON_COL_H)
 		col.alignment = BoxContainer.ALIGNMENT_CENTER
 		add_child(col)
 
