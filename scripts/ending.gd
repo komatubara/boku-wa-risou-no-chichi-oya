@@ -39,16 +39,20 @@ func _build_ui() -> void:
 	title_lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	add_child(title_lbl)
 
-	# 本文
+	# 本文（ScrollContainerで高さを制限）
+	var scroll := ScrollContainer.new()
+	scroll.size = Vector2(660, 440)
+	scroll.position = Vector2(30, 230)
+	add_child(scroll)
+
 	var body := Label.new()
 	body.text = ending.get("body_text", "")
 	body.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 	body.add_theme_font_size_override("font_size", 20)
 	body.add_theme_color_override("font_color", Color(0.9, 0.9, 0.95))
-	body.size = Vector2(640, 420)
-	body.position = Vector2(40, 230)
 	body.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	add_child(body)
+	body.custom_minimum_size = Vector2(640, 0)
+	scroll.add_child(body)
 
 	# 父キャラクター立ち絵
 	var tex := load("res://assets/images/characters/father.png")

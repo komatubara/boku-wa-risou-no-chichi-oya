@@ -21,7 +21,7 @@ func _build_ui() -> void:
 	for i in range(4):
 		var key := PARAM_KEYS[i]
 		var col := VBoxContainer.new()
-		col.position = Vector2(i * 180 + 10, 0)
+		col.position = Vector2(i * 170 + 20, 0)
 		col.size = Vector2(160, 110)
 		col.alignment = BoxContainer.ALIGNMENT_CENTER
 		add_child(col)
