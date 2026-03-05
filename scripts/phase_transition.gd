@@ -46,7 +46,13 @@ func _build_ui() -> void:
 	hint.add_theme_font_size_override("font_size", 20)
 	hint.add_theme_color_override("font_color", Color(0.5, 0.5, 0.65))
 	hint.size = Vector2(680, 40)
-	hint.position = Vector2(20, 1200)
+	# 下部アンカーで端末差を吸収
+	hint.anchor_top = 1.0
+	hint.anchor_bottom = 1.0
+	hint.offset_left = 20
+	hint.offset_right = -20
+	hint.offset_top = -70
+	hint.offset_bottom = -30
 	add_child(hint)
 
 

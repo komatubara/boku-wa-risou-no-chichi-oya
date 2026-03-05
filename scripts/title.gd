@@ -52,7 +52,7 @@ func _build_title() -> void:
 	lbl.add_theme_font_size_override("font_size", 42)
 	lbl.add_theme_color_override("font_color", Color.WHITE)
 	lbl.size = Vector2(680, 120)
-	lbl.position = Vector2(20, 200 + _safe_top)
+	lbl.position = Vector2(20, 220 + _safe_top)
 	lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	add_child(lbl)
 
@@ -61,8 +61,8 @@ func _build_title() -> void:
 	sub.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	sub.add_theme_font_size_override("font_size", 18)
 	sub.add_theme_color_override("font_color", Color(0.9, 0.85, 0.6))
-	sub.size = Vector2(680, 40)
-	sub.position = Vector2(20, 340 + _safe_top)
+	sub.size = Vector2(680, 60)
+	sub.position = Vector2(20, 360 + _safe_top)
 	add_child(sub)
 
 
