@@ -1,5 +1,7 @@
 extends Node
 
+const BGM_VOLUME_DB := -10.0  # BGM音量（0.0=最大、-10.0=約1/3の音量感）
+
 const BGM_PATHS: Array[String] = [
 	"res://assets/audio/bgm_infant.mp3",
 	"res://assets/audio/bgm_elementary.mp3",
@@ -14,7 +16,7 @@ var _current_phase: int = -1
 
 func _ready() -> void:
 	_player = AudioStreamPlayer.new()
-	_player.volume_db = 0.0
+	_player.volume_db = BGM_VOLUME_DB
 	add_child(_player)
 
 
@@ -28,7 +30,7 @@ func play_phase(phase_idx: int) -> void:
 		push_error("BgmManager: file not found: " + BGM_PATHS[phase_idx])
 		return
 	_player.stream = stream
-	_player.volume_db = 0.0
+	_player.volume_db = BGM_VOLUME_DB
 	_player.play()
 
 
@@ -44,4 +46,4 @@ func stop_bgm(fade_sec: float = 0.5) -> void:
 
 
 func _reset_volume() -> void:
-	_player.volume_db = 0.0
+	_player.volume_db = BGM_VOLUME_DB

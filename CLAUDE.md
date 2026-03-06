@@ -26,6 +26,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `/project:audio` | ElevenLabs MCPでBGM・SEを生成 |
 | `/project:balance` | カードのパラメーター変動をシミュレート・調整 |
 | `/project:export` | Godotエクスポートから投稿サイトへのリリース手順ガイド |
+| `/project:debug` | WebエクスポートしてPlaywrightでゲームを視覚的デバッグ |
 
 **進め方の原則（全コマンド共通）：**
 - 一度に聞く質問は最大3つ
