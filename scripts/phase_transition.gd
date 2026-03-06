@@ -1,8 +1,13 @@
 extends Control
 
 
+var _ready_to_advance: bool = false
+
+
 func _ready() -> void:
 	_build_ui()
+	await get_tree().create_timer(0.6).timeout
+	_ready_to_advance = true
 
 
 func _build_ui() -> void:
@@ -57,6 +62,8 @@ func _build_ui() -> void:
 
 
 func _input(event: InputEvent) -> void:
+	if not _ready_to_advance:
+		return
 	var tapped: bool = (event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed) \
 		or (event is InputEventScreenTouch and event.pressed)
 	if tapped:
