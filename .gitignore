@@ -21,4 +21,4 @@ Thumbs.db
 
 # Playwright デバッグ
 .playwright-mcp/
-debug_*.png
+debug/
