@@ -1,5 +1,12 @@
 extends Node
 
+
+func _ready() -> void:
+	var font = load("res://assets/fonts/NotoSansJP-Regular.ttf")
+	if font:
+		ThemeDB.get_default_theme().default_font = font
+
+
 # パラメーター（0〜100, 初期値50）
 var params: Dictionary = {
 	"independence": 50,

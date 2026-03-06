@@ -18,3 +18,7 @@ Thumbs.db
 .claude/settings.local.json
 .mcp.json
 .env
+
+# Playwright デバッグ
+.playwright-mcp/
+debug_*.png
