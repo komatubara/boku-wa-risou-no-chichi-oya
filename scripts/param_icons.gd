@@ -89,7 +89,10 @@ func clear_preview() -> void:
 func _get_danger_color(key: String, val: int) -> Color:
 	var danger: float
 	match key:
-		"independence", "wealth":
+		"independence", "ego":
+			# 0も100も危険（中央50が最も安全）
+			danger = abs(val - 50) / 50.0
+		"wealth":
 			danger = 1.0 - (val / 100.0)  # 値が低いほど危険
 		_:
 			danger = val / 100.0           # 値が高いほど危険

@@ -7,7 +7,6 @@ var _safe_top: float = 0.0
 func _ready() -> void:
 	_safe_top = DisplayServer.get_display_safe_area().position.y
 	_build_bg()
-	_build_father()
 	_build_title()
 	_build_buttons()
 	BgmManager.stop_bgm()
@@ -28,10 +27,6 @@ func _build_bg() -> void:
 	overlay.color = Color(0.0, 0.0, 0.05, 0.45)
 	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(overlay)
-
-
-func _build_father() -> void:
-	pass  # タイトル画面では父キャラ非表示
 
 
 func _build_title() -> void:
