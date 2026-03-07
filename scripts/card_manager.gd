@@ -28,6 +28,21 @@ func load_cards(phase: int) -> Array:
 	return json.data
 
 
+# endings.json の全エンディングを配列で返す
+func load_all_endings() -> Array:
+	var file := FileAccess.open("res://data/endings.json", FileAccess.READ)
+	if file == null:
+		push_error("CardManager: Cannot open endings.json")
+		return []
+	var json := JSON.new()
+	var err := json.parse(file.get_as_text())
+	file.close()
+	if err != OK:
+		push_error("CardManager: JSON parse error in endings.json")
+		return []
+	return json.data
+
+
 # ending_id に一致するエンディングデータを返す
 func get_ending(ending_id: String) -> Dictionary:
 	var file := FileAccess.open("res://data/endings.json", FileAccess.READ)

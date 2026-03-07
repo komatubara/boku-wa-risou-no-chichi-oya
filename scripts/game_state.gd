@@ -5,6 +5,7 @@ func _ready() -> void:
 	var font = load("res://assets/fonts/NotoSansJP-Regular.ttf")
 	if font:
 		ThemeDB.get_default_theme().default_font = font
+	_seen_endings = _load_seen_endings()
 
 
 # パラメーター（0〜100, 初期値50）
@@ -18,6 +19,8 @@ var params: Dictionary = {
 var current_phase: int = 0       # 0=幼児 〜 4=社会人
 var card_index: int = 0          # フェーズ内カード番号（0〜4）
 var pending_ending_id: String = ""  # エンディング画面に渡すID
+
+var _seen_endings: Array[String] = []
 
 const PHASES: Array[String] = ["幼児", "小学校", "中学校", "高校", "社会人"]
 const PHASE_AGES: Array[int] = [3, 9, 13, 16, 23]
@@ -84,6 +87,42 @@ func get_final_ending() -> String:
 		"hate":         "end_cancelled",
 	}
 	return ending_map[top_key]
+
+
+# 見済みエンディングを記録して永続化する
+func save_seen_ending(ending_id: String) -> void:
+	if ending_id not in _seen_endings:
+		_seen_endings.append(ending_id)
+		_save_seen_endings()
+
+
+func get_seen_endings() -> Array[String]:
+	return _seen_endings
+
+
+func _load_seen_endings() -> Array[String]:
+	var file := FileAccess.open("user://seen_endings.json", FileAccess.READ)
+	if file == null:
+		return []
+	var json := JSON.new()
+	if json.parse(file.get_as_text()) != OK:
+		file.close()
+		return []
+	file.close()
+	var result: Array[String] = []
+	if json.data is Array:
+		for item in json.data:
+			if item is String:
+				result.append(item)
+	return result
+
+
+func _save_seen_endings() -> void:
+	var file := FileAccess.open("user://seen_endings.json", FileAccess.WRITE)
+	if file == null:
+		return
+	file.store_string(JSON.stringify(_seen_endings))
+	file.close()
 
 
 # タイトルに戻る際にゲーム状態を完全リセットする

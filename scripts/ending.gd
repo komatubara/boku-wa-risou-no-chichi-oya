@@ -3,6 +3,7 @@ extends Control
 
 func _ready() -> void:
 	BgmManager.stop_bgm()
+	GameState.save_seen_ending(GameState.pending_ending_id)
 	_build_ui()
 
 

@@ -70,7 +70,7 @@ func _build_buttons() -> void:
 	vbox.anchor_bottom = 1.0
 	vbox.offset_left = -200
 	vbox.offset_right = 200
-	vbox.offset_top = -220
+	vbox.offset_top = -310
 	vbox.offset_bottom = -40
 	vbox.add_theme_constant_override("separation", 20)
 	add_child(vbox)
@@ -89,6 +89,13 @@ func _build_buttons() -> void:
 	help.pressed.connect(_on_help_pressed)
 	vbox.add_child(help)
 
+	var endings := Button.new()
+	endings.text = "エンディング一覧"
+	endings.custom_minimum_size = Vector2(400, 80)
+	endings.add_theme_font_size_override("font_size", 28)
+	endings.pressed.connect(_on_endings_pressed)
+	vbox.add_child(endings)
+
 
 func _on_start_pressed() -> void:
 	GameState.reset()
@@ -97,3 +104,7 @@ func _on_start_pressed() -> void:
 
 func _on_help_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/how_to_play.tscn")
+
+
+func _on_endings_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/ending_list.tscn")

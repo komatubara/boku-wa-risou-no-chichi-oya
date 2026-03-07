@@ -145,36 +145,6 @@ func _ready() -> void:
 
 	y += 150.0
 
-	# セパレーター2
-	_add_separator(y)
-	y += 16.0
-
-	# エンディングセクション
-	var end_header := Label.new()
-	end_header.text = "【エンディング（全7種）】"
-	end_header.add_theme_font_size_override("font_size", 22)
-	end_header.add_theme_color_override("font_color", Color(0.9, 0.85, 0.6))
-	end_header.size = Vector2(680, 36)
-	end_header.position = Vector2(20, y)
-	add_child(end_header)
-
-	y += 44.0
-
-	var end_body := Label.new()
-	end_body.text = (
-		"自立心が   0 → ニートエンド\n"
-		+ "自立心が 100 → 巣立ちエンド\n"
-		+ "ワガママ度が   0 → 人形エンド\n"
-		+ "ワガママ度が 100 → 犯罪者エンド\n"
-		+ "親の財力が   0 → 自己破産エンド\n"
-		+ "世間のヘイトが 100 → 炎上エンド"
-	)
-	end_body.add_theme_font_size_override("font_size", 20)
-	end_body.add_theme_color_override("font_color", Color(0.9, 0.9, 0.9))
-	end_body.size = Vector2(680, 200)
-	end_body.position = Vector2(20, y)
-	add_child(end_body)
-
 	# もどるボタン（画面下部にアンカー固定）
 	var back := Button.new()
 	back.anchor_left = 0.5
