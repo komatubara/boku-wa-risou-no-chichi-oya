@@ -36,7 +36,13 @@ func apply_changes(stat_changes: Dictionary) -> void:
 
 
 func _check_bad_end() -> void:
-	if params["independence"] <= 0:
+	if params["independence"] >= 100 and params["ego"] <= 0:
+		bad_end_triggered.emit("end_doll")
+	elif params["independence"] >= 100:
+		bad_end_triggered.emit("end_independent")
+	elif params["ego"] <= 0:
+		bad_end_triggered.emit("end_broken")
+	elif params["independence"] <= 0:
 		bad_end_triggered.emit("end_neet")
 	elif params["ego"] >= 100:
 		bad_end_triggered.emit("end_criminal")
