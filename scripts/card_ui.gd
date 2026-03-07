@@ -140,7 +140,7 @@ func _input(event: InputEvent) -> void:
 
 	# プレス開始
 	if _is_press_start(event):
-		var pos := event.position
+		var pos: Vector2 = event.position
 		if _card_panel.get_global_rect().has_point(pos):
 			_drag_start = pos
 			_is_dragging = true
@@ -151,13 +151,13 @@ func _input(event: InputEvent) -> void:
 	# プレス終了
 	if _is_press_end(event) and _is_dragging:
 		_is_dragging = false
-		var offset := event.position.x - _drag_start.x
+		var offset: float = event.position.x - _drag_start.x
 		_on_drag_end(offset)
 		return
 
 	# ドラッグ中
 	if _is_dragging and _is_motion(event):
-		var offset := event.position.x - _drag_start.x
+		var offset: float = event.position.x - _drag_start.x
 		_card_panel.position.x = CARD_X + offset
 		_card_panel.rotation = offset * 0.0003  # わずかに傾ける
 		# 方向が変わったときのみシグナルを発火（毎フレーム発火を防止）
