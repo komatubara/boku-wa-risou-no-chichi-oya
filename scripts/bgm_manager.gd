@@ -1,6 +1,6 @@
 extends Node
 
-const BGM_VOLUME_DB := -10.0  # BGM音量（0.0=最大、-10.0=約1/3の音量感）
+const BGM_VOLUME_DB := -15.0  # BGM音量（0.0=最大、-10.0=約1/3の音量感）
 
 const BGM_PATHS: Array[String] = [
 	"res://assets/audio/bgm_infant.mp3",
