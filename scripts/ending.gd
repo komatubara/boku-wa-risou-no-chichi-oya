@@ -12,11 +12,27 @@ func _build_ui() -> void:
 		push_error("Ending: invalid ending_id: " + GameState.pending_ending_id)
 		return
 
-	# 背景
+	# 背景（フォールバック用の単色）
 	var bg := ColorRect.new()
 	bg.color = Color(0.05, 0.05, 0.08)
 	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(bg)
+
+	# エンディング別背景イラスト
+	var bg_tex := load("res://assets/images/endings/%s.png" % GameState.pending_ending_id)
+	if bg_tex:
+		var bg_img := TextureRect.new()
+		bg_img.texture = bg_tex
+		bg_img.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		bg_img.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+		bg_img.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		add_child(bg_img)
+
+	# 半透明オーバーレイ（テキスト可読性確保）
+	var overlay := ColorRect.new()
+	overlay.color = Color(0.0, 0.0, 0.05, 0.55)
+	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	add_child(overlay)
 
 	# タグライン（🧠 自立心 ゼロ など）
 	var tagline := Label.new()
@@ -41,7 +57,7 @@ func _build_ui() -> void:
 
 	# 本文（ScrollContainerで高さを制限）
 	var scroll := ScrollContainer.new()
-	scroll.size = Vector2(660, 440)
+	scroll.size = Vector2(660, 620)
 	scroll.position = Vector2(30, 230)
 	add_child(scroll)
 
@@ -53,17 +69,6 @@ func _build_ui() -> void:
 	body.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	body.custom_minimum_size = Vector2(640, 0)
 	scroll.add_child(body)
-
-	# 父キャラクター立ち絵
-	var tex := load("res://assets/images/characters/father.png")
-	if tex:
-		var rect := TextureRect.new()
-		rect.texture = tex
-		rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		rect.size = Vector2(360, 200)
-		rect.position = Vector2(180, 710)
-		add_child(rect)
 
 	# 「もう一度」ボタン
 	var btn := Button.new()
