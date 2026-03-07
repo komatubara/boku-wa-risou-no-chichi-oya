@@ -25,7 +25,7 @@ func _setup_bg() -> void:
 func _setup_param_icons() -> void:
 	_param_icons = Control.new()
 	_param_icons.set_script(load("res://scripts/param_icons.gd"))
-	_param_icons.size = Vector2(720, 120)
+	_param_icons.size = Vector2(720, 130)
 	_param_icons.position = Vector2(0, 20)
 	add_child(_param_icons)
 

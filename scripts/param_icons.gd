@@ -4,7 +4,7 @@ const PARAM_KEYS: Array[String] = ["independence", "ego", "wealth", "hate"]
 const ICON_SPACING := 170   # アイコン列の間隔
 const ICON_MARGIN  := 20    # 左端マージン
 const ICON_COL_W   := 160   # 1列の幅
-const ICON_COL_H   := 110   # 1列の高さ
+const ICON_COL_H   := 120   # 1列の高さ
 const ICON_PATHS: Dictionary = {
 	"independence": "res://assets/images/icons/icon_independence.png",
 	"ego":          "res://assets/images/icons/icon_ego.png",
@@ -41,14 +41,14 @@ func _build_ui() -> void:
 
 		var lbl := Label.new()
 		lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		lbl.add_theme_font_size_override("font_size", 20)
+		lbl.add_theme_font_size_override("font_size", 26)
 		lbl.add_theme_color_override("font_color", Color.WHITE)
 		col.add_child(lbl)
 		_value_labels.append(lbl)
 
 		var preview := Label.new()
 		preview.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		preview.add_theme_font_size_override("font_size", 16)
+		preview.add_theme_font_size_override("font_size", 20)
 		preview.visible = false
 		col.add_child(preview)
 		_preview_labels.append(preview)
