@@ -34,7 +34,7 @@
       "action_text": "早寝の習慣をつける",
       "result_text": "一週間後、息子は自分で目覚ましをかけて起きるようになった。「えらいな」と父は思った。小さな、確実な一歩。",
       "stat_changes": {
-        "independence": 10,
+        "independence": 5,
         "ego": -5,
         "wealth": 0,
         "hate": 0
@@ -60,7 +60,7 @@
       "action_text": "「よく頑張った」と褒める",
       "result_text": "傷だらけの膝をテープで留めながら、父は思った。転んでも走り切ろうとした。それで十分だ。息子はもう来年の話をしていた。",
       "stat_changes": {
-        "independence": 10,
+        "independence": 5,
         "ego": -5,
         "wealth": 0,
         "hate": 0
@@ -112,7 +112,7 @@
       "action_text": "一緒にランドセルを確認する",
       "result_text": "その夜、二人でランドセルの中身を整理した。翌日から息子は自分で宿題を確認するようになった。三週間後、担任から「最近しっかりしてきました」と電話があった。",
       "stat_changes": {
-        "independence": 10,
+        "independence": 5,
         "ego": -5,
         "wealth": 0,
         "hate": 0

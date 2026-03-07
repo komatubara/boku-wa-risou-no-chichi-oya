@@ -8,7 +8,7 @@
       "action_text": "「一緒に考えよう」と話す",
       "result_text": "志望校の傾向を調べ、弱点科目を整理した。息子は自分なりのペースで勉強を続けた。",
       "stat_changes": {
-        "independence": 10,
+        "independence": 5,
         "ego": -5,
         "wealth": 0,
         "hate": 0
@@ -34,7 +34,7 @@
       "action_text": "「また挑戦すればいい」と支援する",
       "result_text": "「悔しいよな。浪人して本気でやってみよう」。息子は黙ってうなずいた。翌年、別の大学に合格した。",
       "stat_changes": {
-        "independence": 10,
+        "independence": 5,
         "ego": -5,
         "wealth": 0,
         "hate": 0
@@ -47,7 +47,7 @@
         "independence": -5,
         "ego": 3,
         "wealth": 0,
-        "hate": 8
+        "hate": 3
       }
     }
   },
@@ -86,7 +86,7 @@
       "action_text": "話を聞いてそっとしておく",
       "result_text": "「まあ、飯だけは食えよ」。そっとしておいた。二週間後、息子はまた普通に話しかけてきた。",
       "stat_changes": {
-        "independence": 10,
+        "independence": 5,
         "ego": -5,
         "wealth": 0,
         "hate": 0
@@ -112,7 +112,7 @@
       "action_text": "本人の意見を尊重して話し合う",
       "result_text": "「いつから思ってたんだ」。二人で進路の可能性をゆっくり話し合った。息子は自分の意志で決断した。",
       "stat_changes": {
-        "independence": 15,
+        "independence": 5,
         "ego": -5,
         "wealth": 0,
         "hate": 0

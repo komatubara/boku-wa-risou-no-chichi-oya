@@ -8,7 +8,7 @@
       "action_text": "「次があるよ」と励ます",
       "result_text": "「5社落ちて、まだ5社か10社かもしれない。続けろ」。素っ気ない励ましだったが、息子は「うん」と返信してきた。",
       "stat_changes": {
-        "independence": 10,
+        "independence": 5,
         "ego": -5,
         "wealth": 0,
         "hate": 0
@@ -34,7 +34,7 @@
       "action_text": "「仕事ってそういうもの」と話す",
       "result_text": "「怒ってくれる上司がいるうちが花だ」。息子は「そんなもんか」と少し楽になった顔をした。",
       "stat_changes": {
-        "independence": 10,
+        "independence": 5,
         "ego": -5,
         "wealth": 0,
         "hate": 0
@@ -60,7 +60,7 @@
       "action_text": "「無理しすぎないようにね」と見守る",
       "result_text": "「しんどかったら有給取れよ。身体だけは大事にしろ」。息子は「うん、ありがとう」と短く答えた。",
       "stat_changes": {
-        "independence": 10,
+        "independence": 5,
         "ego": -5,
         "wealth": 0,
         "hate": 0
@@ -86,7 +86,7 @@
       "action_text": "「自分で解決しなさい」と突き放す",
       "result_text": "厳しい言葉だったが、息子は翌週「なんか上手くいった」と報告してきた。",
       "stat_changes": {
-        "independence": 15,
+        "independence": 5,
         "ego": -5,
         "wealth": 0,
         "hate": 0
@@ -112,7 +112,7 @@
       "action_text": "「いいね、応援するよ」と送り出す",
       "result_text": "部屋探しを一緒に手伝った。引越し当日、息子は「ありがとう」と言って新しい鍵を受け取った。父はその夜、初めて家が広く感じた。",
       "stat_changes": {
-        "independence": 20,
+        "independence": 5,
         "ego": -10,
         "wealth": 0,
         "hate": 0
